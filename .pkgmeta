@@ -1,0 +1,5 @@
+package-as: LibCombatLogging
+enable-nolib-creation: no
+ignore:
+  - .travis.yml
+  - .vscode
