@@ -4,17 +4,28 @@ This library can be used to play nice with other combat logging addons.
 
 # API
 
-`CL.IsLogging(addon)`
+`CL.RegisterCallback(callback, ...events)`
 
-`CL.GetNumLogging()`
+`CL.UnregisterCallback(callback, ...events)`
 
-`CL.StartLogging(addon)`
+`CL.IsLogging(addon) => boolean`
 
-`CL.StopLogging(addon)`
+`CL.GetNumLogging() => number`
 
-`CL.LoggingCombat(addon, newstate)`
+`CL.GetLoggingAddOns(excludeAddon) => string|nil`
+
+`CL.StartLogging(addon) => boolean`
+
+`CL.StopLogging(addon) => boolean`
+
+`CL.LoggingCombat(addon, newstate) => boolean, number`
+
+## events
+
+You can find all the valid events in the table `CL.CallbackEvents`. They are `STARTED_LOGGING`, `STOPPED_LOGGING`, `ADDON_STARTED_LOGGING`, and `ADDON_STOPPED_LOGGING`.
 
 ## addon
+## excludeAddon
 
 The addon parameter is a unique handle you can use in your addon when querying or starting/stopping logging.
 
