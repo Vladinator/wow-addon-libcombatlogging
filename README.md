@@ -4,10 +4,6 @@ This library can be used to play nice with other combat logging addons.
 
 # API
 
-`CL.RegisterCallback(callback, ...events)`
-
-`CL.UnregisterCallback(callback, ...events)`
-
 `CL.IsLogging(addon) => boolean`
 
 `CL.GetNumLogging() => number`
@@ -19,6 +15,16 @@ This library can be used to play nice with other combat logging addons.
 `CL.StopLogging(addon) => boolean`
 
 `CL.LoggingCombat(addon, newstate) => boolean, number`
+
+## CallbackHandler-1.0
+
+You can find information how these API's work in the (wowace project page)[https://www.wowace.com/projects/callbackhandler].
+
+`CL.RegisterCallback(addonRef, event, method, ...)`
+
+`CL.UnregisterCallback(addonRef, event)`
+
+`CL.UnregisterAllCallbacks(addonRef)`
 
 ## events
 
