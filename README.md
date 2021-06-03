@@ -18,7 +18,7 @@ This library can be used to play nice with other combat logging addons.
 
 ## CallbackHandler-1.0
 
-You can find information how these API's work in the (wowace project page)[https://www.wowace.com/projects/callbackhandler].
+You can find information how these API's work in the [wowace project page](https://www.wowace.com/projects/callbackhandler).
 
 `CL.RegisterCallback(addonRef, event, method, ...)`
 
